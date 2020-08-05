@@ -10,7 +10,7 @@ package Utility;
  * @author diego
  */
 public class Dati {
-//If you want to re-use this code, you have just to modify inout data in this class
+//If you want to re-use this code, you have just to modify input data in this class
     public static int Problem_Size() {
         return 6;
     }
