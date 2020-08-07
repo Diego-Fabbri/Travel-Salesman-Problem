@@ -1,0 +1,107 @@
+\documentclass[a4paper,12pt,titlepage]{article}
+\usepackage[utf8]{inputenc} 
+\usepackage{tikz,pgf}
+\usepackage{indentfirst}
+\usepackage{amsfonts}
+\usepackage[english]{babel}
+
+
+%Url e Bookmarks of output PDF 
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+%	pdftitle={Document title},
+	bookmarks=true,
+	%pdfpagemode=FullScreen,
+}
+
+
+
+
+\usepackage{rotating}
+
+\usepackage{tabularx}
+\usepackage{multirow} 
+\usepackage{lscape}
+\usepackage{tikz}
+%to insert PDF files
+\usepackage[final]{pdfpages}
+%--Packages--
+
+\usepackage{eurosym}
+\usepackage{graphicx} \usepackage{verbatim}
+\usepackage{graphics}
+\usepackage{tikz,pgf}
+\usepackage{indentfirst}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx,color,listings}
+\frenchspacing 
+\usepackage{geometry}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{listings}
+%Cool maths printing
+\usepackage{amsmath}
+%PseudoCode
+\usepackage{algorithm2e}
+
+
+\begin{document}
+\section*{Travel Salesman Problem:\\
+	\large{Muller, Tucker and Zemlin Formulation}}
+
+\begin{equation}
+min \sum_{i\in V'}\sum_{j\in V':\,i\neq j} c_{ij}\cdot x_{ij}
+\end{equation}
+
+\begin{center}
+	s.v
+\end{center}
+
+\begin{equation}
+\sum_{i\in U:\,i\neq j}x_{ij}=1\qquad j \in V'
+\label{a}
+\end{equation}
+
+\begin{equation}
+\sum_{j\in U:\,i\neq j}x_{ij}=1\qquad i \in V'
+\label{b}
+\end{equation}
+
+\begin{equation}
+u_i -u_j + n\cdot x_{ij}\leq n-1\qquad i \in U,\,\, j\in U,\,\, i\neq j
+\label{sub-tour}
+\end{equation}
+
+\begin{equation}
+x_{ij} \in \left\lbrace 0,1\right\rbrace \qquad (i,j) \in A'
+\end{equation}
+
+\begin{equation}
+u_i \geq 0 \qquad i\in U
+\end{equation}
+
+where $V'$= $U$\,$\cup$\,$\left\lbrace 0\right\rbrace$\\
+\\
+- $U=$ iset of customer nodes;\\
+- $0$ = depot;\\
+- $n = |V'|$.
+
+
+\end{document}
